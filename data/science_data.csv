@@ -1,0 +1,51 @@
+title,description,category
+Gravity,Force that attracts objects with mass,physics
+Inertia,Tendency of an object to resist changes in motion,physics
+Velocity,Speed of an object in a given direction,physics
+Acceleration,Rate of change of velocity over time,physics
+Force,Interaction that changes motion of an object,physics
+Energy,Capacity to do work,physics
+Kinetic Energy,Energy of motion,physics
+Potential Energy,Stored energy based on position,physics
+Thermodynamics,Study of heat and energy transfer,physics
+Entropy,Measure of disorder in a system,physics
+Atom,Basic unit of matter,chemistry
+Molecule,Group of atoms bonded together,chemistry
+Chemical Reaction,Process where substances transform,chemistry
+pH,Measure of acidity or alkalinity,chemistry
+Oxidation,Loss of electrons in a reaction,chemistry
+Reduction,Gain of electrons in a reaction,chemistry
+Catalyst,Substance that speeds up a reaction,chemistry
+Periodic Table,Arrangement of chemical elements,chemistry
+Bond,Force holding atoms together,chemistry
+Solution,Homogeneous mixture of substances,chemistry
+Cell,Basic unit of life,biology
+DNA,Molecule carrying genetic information,biology
+RNA,Molecule involved in protein synthesis,biology
+Photosynthesis,Process plants use to make energy from light,biology
+Respiration,Process of converting food into energy,biology
+Evolution,Change in species over generations,biology
+Natural Selection,Process where organisms better adapted survive,biology
+Protein,Large molecule essential for structure and function,biology
+Enzyme,Protein that accelerates chemical reactions,biology
+Ecosystem,Community of living organisms and environment,biology
+Planet,Celestial body orbiting a star,astronomy
+Star,Massive luminous sphere of plasma,astronomy
+Galaxy,System of stars bound by gravity,astronomy
+Black Hole,Region with gravity so strong light cannot escape,astronomy
+Orbit,Path of an object around another,astronomy
+Light Year,Distance light travels in one year,astronomy
+Universe,All space and matter that exists,astronomy
+Asteroid,Small rocky body orbiting the sun,astronomy
+Comet,Ice-rich object that forms a tail near the sun,astronomy
+Solar System,System including the sun and orbiting bodies,astronomy
+Algorithm,Step-by-step problem-solving procedure,computer_science
+Data,Information processed or stored,computer_science
+Variable,Storage for a value in programming,computer_science
+Function,Reusable block of code,computer_science
+Loop,Structure that repeats instructions,computer_science
+Database,Organized collection of data,computer_science
+API,Interface allowing systems to communicate,computer_science
+Network,Collection of connected devices,computer_science
+Machine Learning,Systems that learn from data,computer_science
+Artificial Intelligence,Simulation of human intelligence by machines,computer_science
