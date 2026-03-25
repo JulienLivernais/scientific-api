@@ -27,34 +27,28 @@ POST/ stats
 
 ARCHITECTURE APPLICATION
 ----------
-"""
-science-basic-app/
-│
-├── app/
-│   ├── main.py
-│   ├── schemas/
-│   │   └── schemas.py
-│   ├── routers/
-│   │   ├── notions.py
-│   │   ├── calculations.py
-│   │   └── conversions.py
-│
-├── data/
-│   └── science_data.csv
-│
-├── .gitignore
-└── README.md
-"""
+
+- science-basic-app/
+- app/
+  - main.py
+  - schemas/
+    - schemas.py
+  - routers/
+    - notions.py
+    - calculations.py
+    - conversions.py
+- data/
+  - science_data.csv
+- .gitignore
+- README.md
 
 SAMPLE DATA
 ----------
-title,description,category
-Gravity,Force that attracts objects with mass,physics
-Inertia,Tendency of an object to resist changes in motion,physics
-Velocity,Speed of an object in a given direction,physics
-Acceleration,Rate of change of velocity over time,physics
-Force,Interaction that changes motion of an object,physics
-Energy,Capacity to do work,physics
+- title,description,category
+- Gravity,Force that attracts objects with mass,physics
+- Inertia,Tendency of an object to resist changes in motion,physics
+- Velocity,Speed of an object in a given direction,physics
+- Acceleration,Rate of change of velocity over time,physics
 
 NOTES
 ----------
