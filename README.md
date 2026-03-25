@@ -18,12 +18,12 @@ STACK
 
 API
 ----------
-GET/ all_notions
-GET/ title/{by_title} > title/asteroid
-GET/ category/{by_category} > category/physics
-GET/ calculate/gravity?mass=12&gravity=8
-GET/ convert?value=18&unit_from=kg&unit_to=pounds
-POST/ stats
+- GET/ all_notions
+- GET/ title/{by_title} > title/asteroid
+- GET/ category/{by_category} > category/physics
+- GET/ calculate/gravity?mass=12&gravity=8
+- GET/ convert?value=18&unit_from=kg&unit_to=pounds
+- POST/ stats
 
 ARCHITECTURE APPLICATION
 ----------
