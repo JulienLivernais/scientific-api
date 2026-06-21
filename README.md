@@ -1,7 +1,7 @@
 MINI APPLICATION ABOUT SCIENCE CONCEPTS DICTIONARY
 ----------
-Create a mini-application for accessing scientific concepts, 
-with a simple CSV database and basic scientific calculation capabilities.
+A quick-access tool to look up scientific concepts and run basic calculations. 
+Built with FastAPI on the backend, pandas to read the data, and a CSV file as the database.
 
 FEATURES
 ----------
