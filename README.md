@@ -12,9 +12,15 @@ FEATURES
 
 STACK
 ----------
+* BACKEND
 - Python
 - FastAPI
 - Pandas
+
+* FRONTEND
+- React
+- Vite
+- JavaScript
 
 API
 ----------
@@ -28,19 +34,30 @@ API
 ARCHITECTURE APPLICATION
 ----------
 
-- science-basic-app/
-- app/
-  - main.py
-  - schemas/
-    - schemas.py
-  - routers/
-    - notions.py
-    - calculations.py
-    - conversions.py
-- data/
-  - science_data.csv
-- .gitignore
-- README.md
+ARCHITECTURE APPLICATION
+
+* science-basic-app/
+* app/
+   * main.py
+   * schemas/
+      * schemas.py
+   * routers/
+      * notions.py
+      * calculations.py
+      * conversions.py
+      * statistics.py
+* data/
+   * science_data.csv
+* frontend/
+   * src/
+      * api.js
+      * App.jsx
+      * components/
+   * index.html
+   * package.json
+* requirements.txt
+* .gitignore
+* README.md
 
 SAMPLE DATA
 ----------
@@ -52,8 +69,11 @@ SAMPLE DATA
 
 NOTES
 ----------
-This API is intentionally simple and does not include authentication or database persistence, 
-as the focus is on backend fundamentals and data processing.
+This project is intentionally simple and does not include authentication
+or database persistence, as the focus is on backend fundamentals, data
+processing, and consuming a REST API from a frontend.
+
+
 
 
 
