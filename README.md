@@ -12,12 +12,12 @@ FEATURES
 
 STACK
 ----------
-* BACKEND
+BACKEND
 - Python
 - FastAPI
 - Pandas
 
-* FRONTEND
+FRONTEND
 - React
 - Vite
 - JavaScript
