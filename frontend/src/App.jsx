@@ -1,12 +1,13 @@
-import { useEffect } from "react";
-import { getAllNotions } from "./api";
+import NotionsList from "./components/NotionsList";
 
 function App() {
-  useEffect(() => {
-    getAllNotions().then(console.log).catch(console.error);
-  }, []);
-
-  return <h1>Scientific dictionary</h1>;
+  return (
+    <div className="app">
+      <h1>Scientific dictionary</h1>
+      <NotionsList />
+    </div>
+  );
 }
 
 export default App;
+
