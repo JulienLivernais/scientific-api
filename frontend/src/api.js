@@ -30,3 +30,31 @@ export async function getNotionByTitle(title) {
   );
   return handleResponse(response);
 }
+
+// Calculations
+export async function calculateGravity(mass, gravity) {
+  const params = new URLSearchParams({ mass, gravity });
+  const response = await fetch(`${BASE_URL}/calculate/gravity?${params}`);
+  return handleResponse(response);
+}
+
+// Conversions
+export async function convertUnit(value, unitFrom, unitTo) {
+  const params = new URLSearchParams({
+    value,
+    unit_from: unitFrom,
+    unit_to: unitTo,
+  });
+  const response = await fetch(`${BASE_URL}/convert?${params}`);
+  return handleResponse(response);
+}
+
+// Stats
+export async function getStats(numbers) {
+  const response = await fetch(`${BASE_URL}/stats`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(numbers),
+  });
+  return handleResponse(response);
+}

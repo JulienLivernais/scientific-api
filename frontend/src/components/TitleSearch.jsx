@@ -29,6 +29,9 @@ function TitleSearch() {
 
   return (
     <section className="search">
+      <h2>Search a concept</h2>
+      <p className="hint">Try: gravity, inertia, velocity</p>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -47,7 +50,6 @@ function TitleSearch() {
           <div key={notion.title} className="notion-card">
             <h3>{notion.title}</h3>
             <p>{notion.description}</p>
-            <span className="badge">{notion.category}</span>
           </div>
         ))}
     </section>
