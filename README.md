@@ -75,13 +75,13 @@ The backend and the frontend run at the same time, in two terminals.
 
 BACKEND
 * uvicorn app.main:app --reload
-* API: http://localhost:8000
+* API: localhost:8000
 
 FRONTEND
 * cd frontend
 * npm install
 * npm run dev
-* App: http://localhost:5173
+* App: localhost:5173
 
 NOTES
 ----------
