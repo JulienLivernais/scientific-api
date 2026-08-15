@@ -17,9 +17,16 @@ async function handleResponse(response) {
   return response.json();
 }
 
-// NOTIONS
+// Notions
 export async function getAllNotions() {
   const response = await fetch(`${BASE_URL}/all_notions`);
   return handleResponse(response);
 }
 
+// Title search
+export async function getNotionByTitle(title) {
+  const response = await fetch(
+    `${BASE_URL}/title/${encodeURIComponent(title)}`
+  );
+  return handleResponse(response);
+}
