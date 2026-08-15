@@ -67,6 +67,22 @@ SAMPLE DATA
 - Velocity,Speed of an object in a given direction,physics
 - Acceleration,Rate of change of velocity over time,physics
 
+RUNNING THE APP
+-----
+The backend and the frontend run at the same time, in two terminals.
+
+* pip install -r requirements.txt
+
+BACKEND
+* uvicorn app.main:app --reload
+* API: http://localhost:8000
+
+FRONTEND
+* cd frontend
+* npm install
+* npm run dev
+* App: http://localhost:5173
+
 NOTES
 ----------
 This project is intentionally simple and does not include authentication
