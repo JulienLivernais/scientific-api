@@ -47,13 +47,16 @@ function StatsForm() {
 
       {error && <p className="error">{error}</p>}
 
-      {result && (
-        <div className="notion-card">
-          <p className="detail">Mean: <strong>{result.mean.toFixed(2)}</strong></p>
-          <p className="detail">Median: <strong>{result.median.toFixed(2)}</strong></p>
-          <p className="detail">Variance: <strong>{result.variance.toFixed(2)}</strong></p>
-        </div>
-      )}
+            {result && (
+              <div className="notion-card">
+                <p className="detail">Mean</p>
+                <p className="result">{result.mean.toFixed(2)}</p>
+                <p className="detail">Median</p>
+                <p className="result">{result.median.toFixed(2)}</p>
+                <p className="detail">Variance</p>
+                <p className="result">{result.variance.toFixed(2)}</p>
+              </div>
+            )}
     </section>
   );
 }

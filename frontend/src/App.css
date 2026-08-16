@@ -1,7 +1,7 @@
 :root {
   --accent: #5b8dc7;
   --accent-dark: #4a7ab5;
-  --text: #2a2a35;
+  --text: #e8e8ec;
   --text-muted: #666;
   --text-light: #999;
   --border: #ddd;
@@ -10,6 +10,8 @@
   --radius-pill: 999px;
   --radius-card: 16px;
 }
+--text: #e8e8ec;
+
 
 body {
   margin: 0;
@@ -135,4 +137,12 @@ body {
   width: 180px;
   height: 2px;
   background: var(--accent);
+}
+
+.notion-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
 }
