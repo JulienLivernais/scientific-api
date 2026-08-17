@@ -10,6 +10,10 @@ FEATURES
 - Conversion of kilometers to miles, kilograms to pounds, and Celsius to Fahrenheit
 - Calculating the mean, median, and variance of a series of numbers
 
+DEMO
+----------
+![Science App interface](images/demo.png)
+
 STACK
 ----------
 BACKEND
