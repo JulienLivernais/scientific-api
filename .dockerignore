@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.git
+.gitignore
+desktop.ini
+README.md
+Dockerfile
+docker-compose.yml
