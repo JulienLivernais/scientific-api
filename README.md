@@ -3,6 +3,12 @@ MINI APPLICATION ABOUT SCIENCE CONCEPTS DICTIONARY
 A quick-access tool to look up scientific concepts and run basic calculations. 
 Built with FastAPI on the backend, pandas to read the data, and a CSV file as the database.
 
+DEPLOYMENT
+----------
+This APP is deployed on Railway: 
+* Live demo: https://scientific-api-production.up.railway.app/
+* Swagger UI: https://scientific-api-production.up.railway.app/docs
+
 FEATURES
 ----------
 - Dictionary of scientific concepts accessible by concept or category
