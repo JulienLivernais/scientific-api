@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import notions, calculations, conversions, statistics
+from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI(title="scientific-app")
@@ -14,17 +15,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@app.get("/")
-def root():
-    return {"message": "scientific-app is running - go to /docs"}
-
-
 app.include_router(notions.router, tags=["Notions"])
 app.include_router(calculations.router, tags=["Calculations"])
 app.include_router(conversions.router, tags=["Conversions"])
 app.include_router(statistics.router, tags=["Statistics"])
 
+
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 
 
