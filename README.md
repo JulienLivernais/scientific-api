@@ -12,7 +12,7 @@ FEATURES
 
 DEMO
 ----------
-![Science App interface](images/demo.png)
+<img src="images/demo.png" alt="Science App interface" width="800">
 
 STACK
 ----------
