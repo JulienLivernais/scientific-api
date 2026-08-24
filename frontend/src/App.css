@@ -152,3 +152,34 @@ body {
   color: var(--accent);
 }
 
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .app h1 {
+    font-size: 1.5rem;
+  }
+
+  .search form {
+    flex-direction: column;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pair-group {
+    flex-direction: column;
+  }
+
+  .pill {
+    width: 100%;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+  }
+}

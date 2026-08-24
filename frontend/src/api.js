@@ -1,4 +1,4 @@
-const BASE_URL = "";
+const BASE_URL = import.meta.env.DEV ? "http://localhost:8001" : "";
 
 async function handleResponse(response) {
   if (!response.ok) {
