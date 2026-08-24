@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import notions, calculations, conversions, statistics
 from fastapi.staticfiles import StaticFiles
-
+from pathlib import Path
 
 app = FastAPI(title="scientific-app")
 
@@ -21,7 +21,9 @@ app.include_router(conversions.router, tags=["Conversions"])
 app.include_router(statistics.router, tags=["Statistics"])
 
 
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+static_dir = Path(__file__).parent.parent / "static"
+if static_dir.exists():
+    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
 
 
 
