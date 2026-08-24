@@ -2,23 +2,24 @@
   --accent: #5b8dc7;
   --accent-dark: #4a7ab5;
   --text: #e8e8ec;
-  --text-muted: #666;
-  --text-light: #999;
-  --border: #ddd;
-  --border-light: #eee;
-  --error: #c00;
+  --text-muted: #a0a0aa;
+  --text-light: #808088;
+  --border: #3a3a42;
+  --border-light: #2a2a32;
+  --error: #ff6b6b;
   --radius-pill: 999px;
   --radius-card: 16px;
-  --text: #e8e8ec;
-  }
+}
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   background: #16161a;
-  color: #e8e8ec;
+  color: var(--text);
 }
-
 
 .app {
   max-width: 800px;
@@ -28,10 +29,31 @@ body {
   color: var(--text);
 }
 
+.app h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1.5rem;
+  position: relative;
+  color: var(--text);
+}
+
+.app h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 2px;
+  background: var(--accent);
+}
+
 .search h2 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 2rem 0 0.5rem 0;
+  color: var(--text);
 }
 
 .hint {
@@ -52,6 +74,8 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   font-size: 1rem;
+  background: #2a2a32;
+  color: var(--text);
 }
 
 .search input:focus {
@@ -87,9 +111,9 @@ body {
 }
 
 .pill.active {
-  border-color: #000;
-  color: #000;
-  box-shadow: 0 0 0 1px #000;
+  border-color: var(--text);
+  color: var(--text);
+  box-shadow: 0 0 0 1px var(--text);
 }
 
 .notion-card {
@@ -97,10 +121,12 @@ body {
   border-radius: var(--radius-card);
   padding: 1.25rem;
   margin-bottom: 1rem;
+  color: var(--text);
 }
 
 .notion-card h3 {
   margin: 0 0 0.5rem 0;
+  color: var(--accent);
 }
 
 .result {
@@ -116,40 +142,14 @@ body {
   margin: 0.15rem 0;
 }
 
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 .error {
   color: var(--error);
-}
-
-.app h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 1.5rem 0;
-  padding-bottom: 1.5rem;
-  position: relative;
-}
-
-.app h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 180px;
-  height: 2px;
-  background: var(--accent);
-}
-
-.notion-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  padding: 1.25rem;
-  margin-bottom: 1rem;
-  color: var(--text);
-}
-
-.notion-card h3 {
-  margin: 0 0 0.5rem 0;
-  color: var(--accent);
 }
 
 @media (max-width: 640px) {
@@ -168,7 +168,6 @@ body {
   .search input,
   .search button {
     width: 100%;
-    box-sizing: border-box;
   }
 
   .pair-group {
