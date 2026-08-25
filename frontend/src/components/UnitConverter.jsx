@@ -18,7 +18,6 @@ function UnitConverter() {
     if (!value) return;
 
     setError(null);
-    setResult(null);
 
     const [unitFrom, unitTo] = pair.split("-");
 

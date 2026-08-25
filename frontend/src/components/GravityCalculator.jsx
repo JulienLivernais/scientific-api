@@ -12,7 +12,6 @@ function GravityCalculator() {
     if (!mass || !gravity) return;
 
     setError(null);
-    setResult(null);
 
     try {
       const data = await calculateGravity(mass, gravity);

@@ -15,7 +15,6 @@ function TitleSearch() {
 
     setLoading(true);
     setError(null);
-    setResults(null);
 
     try {
       const data = await getNotionByTitle(trimmed);
@@ -42,7 +41,6 @@ function TitleSearch() {
         <button type="submit">Search</button>
       </form>
 
-      {loading && <p>Searching...</p>}
       {error && <p className="error">{error}</p>}
 
       {results &&

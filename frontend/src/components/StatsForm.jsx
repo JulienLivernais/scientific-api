@@ -21,7 +21,6 @@ function StatsForm() {
     }
 
     setError(null);
-    setResult(null);
 
     try {
       const data = await getStats(numbers);
