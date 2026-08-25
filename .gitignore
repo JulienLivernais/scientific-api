@@ -5,3 +5,5 @@ __pycache__/
 desktop.ini
 node_modules/
 dist/
+static/
+
